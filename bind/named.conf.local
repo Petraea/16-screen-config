@@ -1,0 +1,21 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+include "/etc/bind/rndc.key";
+
+zone "screen" {
+    type master;
+    file "/etc/bind/screen.zone";
+    allow-update { key "rndc-key"; };
+};
+
+zone "0.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/0.168.192.in-addr.arpa.zone";
+    allow-update { key "rndc-key"; };
+};
+
