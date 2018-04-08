@@ -1,0 +1,27 @@
+$ORIGIN .
+$TTL 3600	; 1 hour
+0.168.192.in-addr.arpa	IN SOA	dns.screen. dnsmaster.screen. (
+				2015078550 ; serial
+				1800       ; refresh (30 minutes)
+				3600       ; retry (1 hour)
+				604800     ; expire (1 week)
+				3600       ; minimum (1 hour)
+				)
+			NS	dns.screen.
+$ORIGIN 0.168.192.in-addr.arpa.
+1			PTR	pi01.screen.
+10			PTR	pi10.screen.
+11			PTR	pi11.screen.
+12			PTR	pi12.screen.
+13			PTR	pi13.screen.
+14			PTR	pi14.screen.
+15			PTR	pi15.screen.
+16			PTR	pi16.screen.
+2			PTR	pi02.screen.
+3			PTR	pi03.screen.
+4			PTR	pi04.screen.
+5			PTR	pi05.screen.
+6			PTR	pi06.screen.
+7			PTR	pi07.screen.
+8			PTR	pi08.screen.
+9			PTR	pi09.screen.
