@@ -1,7 +1,7 @@
 $ORIGIN .
 $TTL 3600	; 1 hour
 screen			IN SOA	dns.screen. root.localhost. (
-				2016108438 ; serial
+				2016108484 ; serial
 				1800       ; refresh (30 minutes)
 				3600       ; retry (1 hour)
 				3600       ; expire (1 hour)
@@ -10,4 +10,19 @@ screen			IN SOA	dns.screen. root.localhost. (
 			NS	dns.screen.
 $ORIGIN screen.
 dns			A	192.168.0.250
-raspberrypi		A	192.168.0.16
+pi01			A	192.168.0.1
+pi02			A	192.168.0.2
+pi03			A	192.168.0.3
+pi04			A	192.168.0.4
+pi05			A	192.168.0.5
+pi06			A	192.168.0.6
+pi07			A	192.168.0.7
+pi08			A	192.168.0.8
+pi09			A	192.168.0.9
+pi10			A	192.168.0.10
+pi11			A	192.168.0.11
+pi12			A	192.168.0.12
+pi13			A	192.168.0.13
+pi14			A	192.168.0.14
+pi15			A	192.168.0.15
+pi16			A	192.168.0.16
