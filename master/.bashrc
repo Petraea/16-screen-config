@@ -17,4 +17,5 @@
 # alias cp='cp -i'
 # alias mv='mv -i'
 
+alias pdsh='pdsh -f 8 '
 export PDSH_RCMD_TYPE=ssh
