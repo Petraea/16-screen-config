@@ -1,0 +1,1 @@
+./configure --prefix=/apps/slurm/17.11.5/ --with-munge=/usr/bin/munge --sysconfdir=/etc/slurm/
