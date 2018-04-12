@@ -9,6 +9,8 @@ screen			IN SOA	dns.screen. root.localhost. (
 				)
 			NS	dns.screen.
 $ORIGIN screen.
+wallmaster		A	192.168.0.250
+master			A	192.168.0.250
 dns			A	192.168.0.250
 pi01			A	192.168.0.1
 pi02			A	192.168.0.2

@@ -1,0 +1,21 @@
+[Unit]
+Description=Slurm node daemon
+RequiresMountsFor=/etc/slurm
+RequiresMountsFor=/apps
+After=network.target
+ConditionPathExists=/etc/slurm/slurm.conf
+
+[Service]
+Type=forking
+Environment=SLURM_CONF=/etc/slurm/slurm.conf
+ExecStart=/apps/slurm/current/sbin/slurmd
+ExecReload=/bin/kill -HUP $MAINPID
+PIDFile=/var/run/slurmd.pid
+KillMode=process
+LimitNOFILE=51200
+LimitMEMLOCK=infinity
+LimitSTACK=infinity
+
+[Install]
+WantedBy=multi-user.target
+
